@@ -1,0 +1,648 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+:root{
+  --color:#6C5CE7;
+}
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  transition: all .2s linear;
+  text-decoration: none;
+}
+
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+.heading{
+  margin:2rem;
+  padding-top: 6rem;
+  display: inline-block;
+  font-size: 3.5rem;
+  color:var(--color);
+  position: relative;
+  letter-spacing: .2rem;
+}
+
+.heading::before, .heading::after{
+  content: '';
+  position: absolute;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-top:.4rem solid var(--color);
+  border-left:.4rem solid var(--color);
+}
+
+.heading::before{
+  top:5.8rem; left: -2rem;
+}
+
+.heading::after{
+  bottom:-.5rem; right: -2rem;
+  transform: rotate(180deg);
+}
+
+.btn{
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  background: var(--color);
+  color:#fff;
+  cursor: pointer;
+  height:3.5rem;
+  width: 15rem;
+  font-size: 1.7rem;
+  box-shadow: 0 .2rem .5rem rgba(0,0,0,.3);
+}
+
+.btn:hover{
+  letter-spacing: .1rem;
+  border: 2px solid #6C5CE7;
+  background: transparent;
+  color: #6C5CE7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding:1rem 2rem;
+  position: fixed;
+  top:0; left: 0;
+  z-index: 100;
+}
+
+.header .logo{
+  font-size: 3rem;
+  color:#fff;
+}
+
+.header .logo i{
+  padding:0 .5rem;
+}
+
+.header .navbar ul{
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header .navbar ul li{
+  margin:0 1.5rem;
+}
+
+.header .navbar ul li a{
+  font-size: 2rem;
+  color:#fff;
+}
+
+.header .navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.header .fa-bars{
+  color:#fff;
+  cursor: pointer;
+  font-size: 3rem;
+  display: none;
+}
+
+
+
+
+
+
+
+.home{
+  min-height: 100vh;
+  width: 100vw;
+  background-image: url(homebg.jpg);;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  justify-content: center;
+  flex-flow: column;
+  text-align: center;
+  padding:0 1rem;
+  position: relative;
+  overflow: hidden !important;
+}
+
+.home .banner{
+  color:#fff;
+  font-size: 9rem;
+  font-family: 'Dancing Script', cursive;
+  text-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
+}
+
+.home .slogan{
+  color:#eee;
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+
+.home button{
+  height: 4rem;
+  width: 18rem;
+  background:#fff;
+  border-radius: 20px;
+  color: #444;
+  cursor: pointer;
+  border:none;
+  outline: none;
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: 400;
+  box-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
+}
+
+.home button:hover{
+  letter-spacing: .1rem;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 20px;
+}
+
+
+.about{
+  min-height: 100vh;
+  width: 100vw;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.about .row{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding:0 4rem;
+}
+
+.about .row .content{
+  text-align: left;
+}
+
+.about .row .image img{
+  width: 50vw;
+  height: 75vh;
+}
+
+.about .row .content h3{
+  font-size: 3rem;
+  color: var(--color);
+}
+
+.about .row .content p{
+  font-size: 1.8rem;
+  color: #333;
+  padding:2rem 0;
+}
+
+.about::before, .about::after{
+  content: '';
+  position: absolute;
+  z-index: -1;
+  opacity:.2;
+  border-radius: 50%;
+}
+
+.about::before{
+  height:50rem;
+  width:50rem;
+  background:#ccc;
+  bottom:-10rem; left:-10rem;
+}
+
+.about::after{
+  height:60rem;
+  width:60rem;
+  background:var(--color);
+  top:-10rem; right:-10rem;
+}
+
+.Starship{
+  width: 100vw;
+  text-align: center;
+  background-color: #222;
+}
+
+
+.Starship .heading{
+    color: white;
+}
+
+.Starship .heading::before, .Starship .heading::after{
+    border-color:#fff;
+}
+
+.Starship .row{
+  /* margin:2rem 0; */
+  margin-top: 2rem;
+  padding:0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Starship .row .image img{
+  width:50vw;
+  height:55vh;
+  border-radius: 40px;
+  margin: 25px;
+}
+
+.Starship .row .content{
+  text-align: left;
+  padding:0 3rem;
+}
+
+.Starship .row .content h3{
+  font-size: 3rem;
+  color:var(--color);
+}
+
+.Starship .row .content p{
+  font-size: 1.5rem;
+  color:white;
+  padding:1rem 0;
+}
+
+
+
+
+
+.Schedule{
+    position: relative;
+    min-height: 100vh;
+    background-image: url(Schedulebg.jpg);
+    background-size: cover; 
+    padding: 2rem;
+    padding-bottom: 9rem;
+}
+
+.Schedule .heading{
+    color: white;
+    margin-bottom: 5rem;
+}
+
+
+.Schedule .heading::before, .Schedule .heading::after{
+    border-color:#fff;
+}
+
+.Schedule .image-conatiner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* padding: 10px; */
+}
+
+
+.Schedule .image-conatiner .schedule-image{
+    height: 600px;
+    width: 950px;
+    border: 5px solid white;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+    cursor: pointer;
+}
+
+
+.Schedule .image-conatiner .schedule-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+.Schedule .image-conatiner .schedule-image:hover img{
+    transform: scale(1.03);
+}
+
+
+.Schedule{
+    text-align: center;
+    width: 100vw;
+}
+
+
+.Archives{
+  min-height: 100vh;
+  width:100vw;
+  text-align: center;
+  background-color: #222;;
+}
+
+.Archives .heading{
+  color:#fff;
+}
+
+.Archives .heading::before, .Archives .heading::after{
+  border-color:#fff;
+}
+
+.Archives .row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.Archives .row .card{
+  height:35rem;
+  width:25rem;
+  background:#fff;
+  text-align: center;
+  margin:7rem 2rem;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-reflect: below .2rem linear-gradient(transparent 70%, #0004);
+}
+
+.Archives .row .card .image{
+  margin:1rem 0;
+  padding-top: 4rem;
+}
+
+.Archives .row .card .image img{
+  height:13rem;
+  width:13rem;
+  border-radius: 50%;
+  border:.5rem solid #fff;
+  box-shadow: 0 0 .5rem rgba(0,0,0,.3);
+  object-fit: cover;
+}
+
+.Archives .row .card .info h3{
+  font-size: 2rem;
+  color:#333;
+}
+
+.Archives .row .card .info span{
+  font-size: 1.8rem;
+  color:var(--color);
+}
+
+.Archives .row .card .info button{
+    margin-top: 2rem;
+}
+
+
+.Archives .row .card::before, .Archives .row .card::after{
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  height:15rem;
+  width:15rem;
+  z-index: -1;
+}
+
+.Archives .row .card::before{
+  background:var(--color);
+  top:-3rem; right: -4rem;
+}
+
+.Archives .row .card::after{
+  background:#ccc;
+  bottom:-3rem; left: -4rem;
+}
+
+.Book-Tickets{
+  min-height: 100vh;
+  width: 100vw;
+  text-align: center;
+}
+
+.Book-Tickets .row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Book-Tickets .row .image img{
+  height: 70vh;
+  width:50vw;
+}
+
+.Book-Tickets .row .form-container{
+  width: 50%;
+  text-align: left;
+  padding:0 5rem;
+}
+
+.Book-Tickets .row .form-container input, textarea{
+  outline: none;
+  border:none;
+  height:4rem;
+  background: none;
+  border-radius: .5rem;
+  box-shadow: .2rem .2rem .5rem rgba(0,0,0,.2);
+  padding:0 1rem;
+  margin:1rem 0;
+  font-size: 1.6rem;
+}
+
+.Book-Tickets .row .form-container .inputBox{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Book-Tickets .row .form-container .inputBox input[type="text"]{
+  width: 49%;
+}
+
+.Book-Tickets .row .form-container input[type="email"]{
+  width: 100%;
+}
+
+.Book-Tickets .row .form-container textarea{
+  width: 100%;
+  height:20rem;
+  padding:1rem; 
+  resize: none;
+}
+
+.Book-Tickets .row .form-container input[type="submit"]{
+  background-color: var(--color);
+  color:#fff;
+  cursor: pointer;
+  height:4rem; 
+  width: 10rem;;
+}
+
+.Book-Tickets .row .form-container input[type="submit"]:hover{
+  letter-spacing: .1rem;
+  background-color: transparent;
+  color: #6C5CE7;
+  border: 2px solid #6C5CE7;
+}
+
+
+.footer{
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:1rem 2rem;
+  margin-top: 1rem;
+  background:var(--color);
+}
+
+.footer h1{
+  color:#fff;
+  letter-spacing: .1rem;
+  font-weight: 400;
+}
+
+.footer .icons a{
+  color:#fff;
+  font-size: 1.8rem;
+  padding:0 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries  */
+
+@media (max-width:768px){
+
+  html{
+    font-size: 50%;
+  }
+
+  .header .fa-bars{
+    display: block;
+  }
+
+  .header .navbar{
+    position: fixed;
+    top:-120%; left: 0;
+    height: auto;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    border-top: .1rem solid rgba(0,0,0,.3);
+  }
+
+  .header .navbar ul{
+    height: 100%;
+    width: 100%;
+    flex-flow: column;
+  }
+
+  .header .navbar ul li{
+    margin:1rem 0;
+  }
+
+  .header .navbar ul li a{
+    color: #444;
+    font-size: 2.4rem;
+  }
+
+  .header .fa-times{
+    transform: rotate(180deg);
+  }
+
+  .header .nav-toggle{
+    top:5.8rem;
+  }
+
+  .home .banner{
+    font-size: 4rem;
+  }
+
+  .home .slogan{
+    font-size: 1.7rem;
+  }
+
+  .about .row{
+    flex-flow: column-reverse;
+    padding:0 2rem;
+  }
+
+  .about .row .image img{
+    width: 100vw;
+  }
+
+  .Starship .row{
+    flex-flow: column-reverse;
+  }
+
+  .Starship .row:nth-child(even){
+    flex-flow: column;
+  }
+
+  .Starship .row .image img{
+    width: 100vw;
+  }
+
+  .Starship .row .content{
+    padding:0;
+  }
+
+  .Book-Tickets .row{
+    flex-flow: column;
+  }
+
+  .Book-Tickets .row .image img{
+    width: 100vw;
+  }
+
+  .Book-Tickets .row .form-container{
+    width: 100%;
+    padding:0 1.5rem;
+  }
+
+}
+
+@media (max-width:550px){
+  .footer{
+    flex-flow: column;
+  }
+  .footer h1{
+    text-align: center;
+  }
+  .footer .icons{
+    padding:2rem 0;
+  }
+}
