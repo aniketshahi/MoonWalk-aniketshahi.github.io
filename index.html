@@ -10,11 +10,14 @@
 
   <!-- custom css file link  -->
   <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
   <title>Moon Trip</title>
 </head>
 
 <body>
+
   <!-- header section starts  -->
 
   <header class="header">
@@ -248,6 +251,16 @@
   <!-- custom js file link  -->
 
   <script src="mian.js"></script>
+  <script>
+    const menuIcon = document.querySelector('.fa-bars');
+    const navbar = document.querySelector('.navbar');
+  
+    menuIcon.addEventListener('click', () => {
+      navbar.classList.toggle('show');
+    });
+  </script>
+  
+  
 </body>
 
 </html>
